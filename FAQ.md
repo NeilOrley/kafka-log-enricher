@@ -1,4 +1,4 @@
-Comment organiser le pipeline ?
+## Comment organiser le pipeline ?
 
 1. **Collecte des messages de log** :
    - Depuis Kafka : utiliser des outils tels que Kafka Connect pour récupérer les messages de logs en temps réel et les stocker dans un espace de stockage temporaire pour le traitement.
@@ -26,7 +26,7 @@ Comment organiser le pipeline ?
    - Mettre en place des mécanismes de contrôle de la qualité des annotations.
 
 
-Qu'est ce que la "conversion en séquence" ?
+## Qu'est ce que la "conversion en séquence" ?
 
 La conversion en séquences est une étape de prétraitement dans laquelle un texte est transformé en une séquence de nombres. Elle est souvent utilisée dans le contexte de l'apprentissage automatique, en particulier pour les tâches liées au traitement du langage naturel (NLP), afin de rendre le texte compatible avec les modèles qui s'attendent à des entrées numériques.
 
