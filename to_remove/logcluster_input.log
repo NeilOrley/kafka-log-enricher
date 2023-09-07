@@ -1,0 +1,2309 @@
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 7 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 7 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 4 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 4 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+yum update
+/
+8
+/var/cache/yum/x86_64/8
+update
+['update']
+constructed: 'libdnf (CentOS Linux 8; generic; Linux.x86_64)'
+utilisation du cache pour : extras
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Cannot download repodata/repomd.xml: All mirrors were tried
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+yum update
+/
+8
+/var/cache/yum/x86_64/8
+update
+['update']
+constructed: 'libdnf (CentOS Linux 8; generic; Linux.x86_64)'
+utilisation du cache pour : extras
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Cannot download repodata/repomd.xml: All mirrors were tried
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 4 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 4 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 4 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 2 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 4 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+config: 4 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+a expiré et sera réinitialisé.
+« extras » peut être relancé - le repomd correspond.
+utilisation des métadonnées depuis le mar. 08 mars 2022 20:26:07 CET.
+Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).
+Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+Échec du téléchargement des métadonnées pour le dépôt « copr:copr.fedorainfracloud.org:castor:remmina » : Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT]
+téléchargement à distance en provenance de : base
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Cannot prepare internal mirrorlist: No URLs in mirrorlist
+Échec du téléchargement des métadonnées pour le dépôt « base » : Cannot prepare internal mirrorlist: No URLs in mirrorlist
+config: 3 ms
+builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile
+4.4.2
+dnf makecache --timer
+/
+8
+/var/cache/yum/x86_64/8
+makecache
+['makecache', '--timer']

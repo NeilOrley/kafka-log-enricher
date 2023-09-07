@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kafka Log Enricher</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Logs from Kafka</h2>
+        <form action="/send" method="post">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Log</th>
+                        <th>Severity</th>
+                        <th>Event Type</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for message in messages %}
+                        <tr>
+                            <td>{{ message }}</td>
+                            <td>
+                                <select name="severity" required>
+                                    <option value="debug">Debug</option>
+                                    <option value="info">Info</option>
+                                    <option value="warning">Warning</option>
+                                    <option value="error">Error</option>
+                                    <option value="critical">Critical</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="event_type" required>
+                                    <option value="Message dinformation">Message d'information</option>
+                                    <option value="Message de donnée">Message de donnée</option>
+                                    <option value="Changement de status">Changement de status</option>
+                                    <option value="Erreur/Alerte">Erreur/Alerte</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="hidden" name="log" value="{{ message }}">
+                                <button type="submit" class="btn btn-primary">Send</button>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
