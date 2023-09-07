@@ -16,8 +16,8 @@ Une interface web permettant d'extraire des messages d'un topic Kafka spécifiqu
 1. **Clonez le répertoire**:
 
    ```bash
-   git clone [URL_DU_REPO]
-   cd [NOM_DU_REPO]
+   git clone https://github.com/NeilOrley/KafkaLogEnricher.git
+   cd KafkaLogEnricher
    ```
 
 2. **Configuration**:
@@ -33,13 +33,7 @@ Une interface web permettant d'extraire des messages d'un topic Kafka spécifiqu
 4. **Exécution**:
 
    ```bash
-   python [NOM_DU_FICHIER_PRINCIPAL].py
-   ```
-
-   Par exemple, si le fichier principal s'appelle `app.py`, vous exécuteriez :
-
-   ```bash
-   python app.py
+   python kafka_log_enricher.py
    ```
 
 ## Configuration
@@ -50,7 +44,7 @@ Exemple de configuration :
 
 ```ini
 [CONSUMER]
-bootstrap.servers = 10.1.81.161
+bootstrap.servers = your_broker
 group.id = your_group
 auto.offset.reset = earliest
 topic = your_topic
