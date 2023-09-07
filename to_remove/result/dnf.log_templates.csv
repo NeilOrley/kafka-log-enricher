@@ -1,5 +1,0 @@
-EventId,EventTemplate,Occurrences
-084f930c,"builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, kpatch, needs-restarting, playground, product-id, repoclosure, repodiff, repograph, repomanage, reposync, uploadprofile",147
-fe8b2918,Failure when receiving data from the peer for https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml [Received HTTP code 403 from proxy after CONNECT] (https://download.copr.fedorainfracloud.org/results/castor/remmina/epel-8-x86_64/repodata/repomd.xml).,123
-593616de,base,55
-4754bed9,Cannot prepare internal mirrorlist: No URLs in mirrorlist,183
