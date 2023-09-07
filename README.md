@@ -14,13 +14,11 @@ Une interface web permettant d'extraire des messages d'un topic Kafka spécifiqu
 ## Pré-requis
 Le message dans le topic Kafka doit avoir le format suivant :
 
-    ```json
     {
         "log": "my_log_message",
         "my_key": "my_value",
         ...
     }
-    ```
 
 ## Installation
 
