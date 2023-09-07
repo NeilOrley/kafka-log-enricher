@@ -1,3 +1,4 @@
 __pycache__/
 venv/
 to_remove/
+config.ini

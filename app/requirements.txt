@@ -1,0 +1,5 @@
+Flask==2.3.3
+confluent-kafka==1.7.0
+configparser
+json
+atexit

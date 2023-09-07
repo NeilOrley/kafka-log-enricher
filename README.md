@@ -11,14 +11,19 @@ Une interface web permettant d'extraire des messages d'un topic Kafka spécifiqu
   - Type d'événement: "Message d'information", "Message de donnée", "Changement de status", "Erreur/Alerte"
 - Renvoyer le message enrichi dans un topic Kafka défini.
 
-## Pré-requis
-Le message dans le topic Kafka doit avoir le format suivant :
+## Prérequis
+- Le message dans le topic Kafka doit avoir le format suivant :
 
     {
         "log": "my_log_message",
         "my_key": "my_value",
         ...
     }
+
+- Python 3.x
+- Flask
+- confluent-kafka
+- configparser
 
 ## Installation
 
@@ -33,17 +38,54 @@ Le message dans le topic Kafka doit avoir le format suivant :
 
    Mettez à jour le fichier `config.ini` avec les informations appropriées pour vos serveurs Kafka, groupes et topics.
 
-3. **Installez les dépendances**:
+3. **Activez l'environnement virtuel**:
 
+   - Naviguez vers le dossier du projet et créer un environnement virtuel :
+    ```bash
+    cd KafkaLogEnricher
+    python -m venv venv
+    ```
+
+   - Sur Windows:
+     ```bash
+     .\venv\Scripts\Activate
+     ```
+
+   - Sur macOS ou Linux:
+     ```bash
+     source venv/bin/activate
+     ```
+
+4. **Installez les dépendances**:
+
+   - Sur Windows:
    ```bash
-   pip install -r requirements.txt
+   pip install -r .\app\requirements.txt
    ```
 
-4. **Exécution**:
+   - Sur macOS ou Linux:
+   ```bash
+   pip install -r app/requirements.txt
+   ```
+
+5. **Exécution**:
 
    ```bash
    python kafka_log_enricher.py
    ```
+
+## Utilisation
+
+1. Exécutez l'application:
+
+   ```bash
+   python kafka_log_enricher.py
+   ```
+
+2. Naviguez vers `http://localhost:5000` dans votre navigateur pour accéder à l'interface utilisateur.
+
+3. Les logs de Kafka seront automatiquement récupérés du topic spécifié. Enrichissez chaque log en sélectionnant sa gravité et son type d'événement, puis cliquez sur "Send" pour envoyer le log enrichi vers le topic Kafka de sortie.
+
 
 ## Configuration
 
