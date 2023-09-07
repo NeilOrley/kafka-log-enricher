@@ -30,8 +30,8 @@ Une interface web permettant d'extraire des messages d'un topic Kafka spécifiqu
 1. **Clonez le répertoire**:
 
    ```bash
-   git clone https://github.com/NeilOrley/KafkaLogEnricher.git
-   cd KafkaLogEnricher
+   git clone https://github.com/NeilOrley/kafka-log-enricher.git
+   cd kafka-log-enricher
    ```
 
 2. **Configuration**:
@@ -42,7 +42,7 @@ Une interface web permettant d'extraire des messages d'un topic Kafka spécifiqu
 
    - Naviguez vers le dossier du projet et créer un environnement virtuel :
     ```bash
-    cd KafkaLogEnricher
+    cd kafka-log-enricher
     python -m venv venv
     ```
 
