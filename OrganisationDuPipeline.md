@@ -1,4 +1,4 @@
-Comment vous pourriez organiser le pipeline :
+Comment organiser le pipeline ?
 
 1. **Collecte des messages de log** :
    - Depuis Kafka : utiliser des outils tels que Kafka Connect pour récupérer les messages de logs en temps réel et les stocker dans un espace de stockage temporaire pour le traitement.

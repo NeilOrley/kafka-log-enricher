@@ -1,4 +1,4 @@
-Créer une telle interface nécessiterait plusieurs étapes et diverses technologies. Ci-dessous, vous trouverez un plan de base pour créer une telle interface:
+Ci-dessous, vous trouverez un plan de base pour créer une telle interface:
 
 1. **Choisir une technologie pour l'interface graphique** : Un choix populaire serait une application Web. Vous pouvez utiliser des frameworks comme React, Angular ou Vue.js.
 
