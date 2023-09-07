@@ -1,0 +1,10 @@
+[CONSUMER]
+bootstrap.servers = your_broker
+group.id = your_group
+auto.offset.reset = earliest
+topic = your_input_topic
+max_wait_time = your_wait_time
+
+[PRODUCER]
+bootstrap.servers = your_broker
+output_topic = your_output_topic
