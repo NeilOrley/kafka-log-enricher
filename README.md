@@ -11,6 +11,17 @@ Une interface web permettant d'extraire des messages d'un topic Kafka spécifiqu
   - Type d'événement: "Message d'information", "Message de donnée", "Changement de status", "Erreur/Alerte"
 - Renvoyer le message enrichi dans un topic Kafka défini.
 
+## Pré-requis
+Le message dans le topic Kafka doit avoir le format suivant :
+
+    ```json
+    {
+        "log": "my_log_message",
+        "my_key": "my_value",
+        ...
+    }
+    ```
+
 ## Installation
 
 1. **Clonez le répertoire**:
