@@ -7,8 +7,62 @@ Une interface web permettant d'extraire des messages d'un topic Kafka spécifiqu
 - Lire les messages d'un topic Kafka en temps réel.
 - Afficher le contenu du champ "log" de messages formatés en JSON.
 - Proposer d'enrichir chaque message avec deux informations :
-  - Sévérité: "debug", "info", "warning", "error", "critical"
-  - Type d'événement: "Message d'information", "Message de donnée", "Changement de status", "Erreur/Alerte"
+  - Sévérité: "info", "warning", "error", "critical"
+  - Type d'événement: 
+    - Démarrage et Arrêt:
+      Initialisation du système
+      Arrêt du système
+      Redémarrage
+      Changements d'état du matériel
+
+    - Authentification et Autorisation:
+      Tentatives de connexion réussies
+      Tentatives de connexion échouées
+      Changements de mot de passe
+      Modifications des rôles et des permissions
+
+    - Opérations sur les Fichiers:
+      Création, modification, suppression de fichiers ou de dossiers
+      Échecs d'accès aux fichiers
+      Transferts de fichiers
+
+    - Communication Réseau:
+      Connexions établies et terminées
+      Erreurs de communication réseau
+      Tentatives de connexions suspectes
+      Modifications de la configuration réseau
+
+    - Opérations sur les Applications:
+      Démarrage et arrêt des services ou applications
+      Mises à jour des logiciels
+      Erreurs d'exécution des applications
+
+    - Sécurité et Anomalies:
+      Détections d'intrusion
+      Violations de politiques de sécurité
+      Anomalies détectées par des outils comme les IDS/IPS
+
+    - Performance et Ressources:
+      Utilisation élevée de la CPU
+      Espace disque faible
+      Surutilisation de la mémoire
+      Problèmes de performance réseau
+
+    - Maintenance et Mises à jour:
+      Mises à jour du système ou des applications
+      Maintenance programmée
+      Sauvegardes et restaurations
+
+    - Notifications et Alertes:
+      Alerte d'espace disque faible
+      Échec de sauvegarde
+      Seuils d'utilisation dépassés
+
+    - Interactions Utilisateur:
+      Commandes exécutées
+      Modifications de configuration
+      Sessions utilisateur
+      
 - Renvoyer le message enrichi dans un topic Kafka défini.
 
 ## Prérequis
@@ -21,7 +75,7 @@ Une interface web permettant d'extraire des messages d'un topic Kafka spécifiqu
         ...
     }
    ```
-   
+
 - Python 3.x
 - Flask
 - confluent-kafka
