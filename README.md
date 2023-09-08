@@ -14,12 +14,14 @@ Une interface web permettant d'extraire des messages d'un topic Kafka spécifiqu
 ## Prérequis
 - Le message dans le topic Kafka doit avoir le format suivant :
 
+   ```bash
     {
         "log": "my_log_message",
         "my_key": "my_value",
         ...
     }
-
+   ```
+   
 - Python 3.x
 - Flask
 - confluent-kafka
