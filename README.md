@@ -9,6 +9,9 @@ Une interface web permettant d'extraire des messages d'un topic Kafka spécifiqu
 - Proposer d'enrichir chaque message avec deux informations :
   - Sévérité: "info", "warning", "error", "critical"
   - Type d'événement: 
+    - Heartbeat :
+      Vérification régulière d'un état
+
     - Changement d'état (State change) :
       Démarrage et arrêt      
       Redémarrage
@@ -48,6 +51,9 @@ Une interface web permettant d'extraire des messages d'un topic Kafka spécifiqu
       Modifications de configuration
       Sessions utilisateur
 
+    - Useless:
+      Trucs qui servent a rien
+
   - Catégorisation générale en composant : 
     - Infrastructure Matérielle (Hardware Infrastructure) :
       Serveurs: Peuvent être physiques ou virtuels (comme les VMs).
@@ -84,6 +90,9 @@ Une interface web permettant d'extraire des messages d'un topic Kafka spécifiqu
     - Automatisation & CI/CD (Automation & CI/CD) :
       Outils d'automatisation: Jenkins, GitLab CI, Terraform, etc.
       Gestion de configuration: Ansible, Salt, etc.
+
+    - Uncategorized:
+      Pas besoin de catégoriser
       
 - Renvoyer le message enrichi dans un topic Kafka défini.
 
@@ -182,6 +191,11 @@ topic = your_topic
 [PRODUCER]
 bootstrap.servers = your_broker
 output_topic = your_output_topic
+
+[CLASSIFIERS]
+severities = INFO,DEBUG,WARNING,ERROR,CRITICAL
+event_types = Heartbeat,State change,Authentication and Authorization,Operations on files and apps,Network Communication,Security and Anomalies,Performance and Resources,User Interactions,Useless
+categories = Hardware Infrastructure,Software Infrastructure,Connectivity and Security,Datas,Application & Middleware,Monitoring & Logging,Automation & CI/CD,Uncategorized
 ```
 
 ## Contribuer
