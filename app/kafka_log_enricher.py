@@ -297,7 +297,7 @@ def get_message():
 
                 #print(predicted_msg_content)
                 #print(msg_content)
-                if max_prob < 0.55:
+                if max_prob < 0.75:
                     # Appel de la fonction de catégorisation
                     if categorize_message(message, msg_content):
                         save_message(msg_content)
