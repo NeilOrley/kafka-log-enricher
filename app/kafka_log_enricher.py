@@ -155,6 +155,16 @@ def index():
     return render_template('index.html', event_types=event_types, categories=categories, severities=severities)
 
 
+def teach_to_learner(enriched_msg):
+    message_vector = convert_to_vector(enriched_msg["message"])
+    
+    # Combinez les labels. Cette étape dépend de votre cas d'utilisation.
+    combined_label = f"{enriched_msg['severity']}_{enriched_msg['event_type']}_{enriched_msg['category']}"
+    
+    learner.teach([message_vector], [combined_label])
+
+    dump(learner, 'learner_model.pkl')
+
 def save_message(message_content):
     """
     Sauvegarde le message après la catégorisation.
@@ -163,6 +173,9 @@ def save_message(message_content):
     # Convert the dictionary to a JSON string
     json_msg = json.dumps(message_content)
     p.produce(output_topic, value=json_msg)
+
+    if ACTIVE_LEARNING_ENABLED:
+        teach_to_learner(message_content)
 
 
 def categorize_message(message, msg_content):
@@ -264,36 +277,45 @@ def get_message():
         if msg:
             # Décoder le message et charger le JSON
             msg_content = json.loads(msg.value().decode('utf-8'))
-            # Extraire la valeur associée à la clé "message"
-            message = msg_content.get('message', 'No Content')  # Retourne une chaîne vide si la clé "message" n'existe pas
+            # Extraire la valeur associée à la clé "message" ou "log". Sinon renvoi 'No Content'
+            message = msg_content.get('message') or msg_content.get('log') or 'No Content'
             msg_content['message'] = message
 
             if ACTIVE_LEARNING_ENABLED:
-                message_vector = convert_to_vector(message)
-                prediction = learner.predict([message_vector])
-                # Si vous n'êtes pas sûr à 100% de la prédiction, demandez une annotation
-                max_prob = np.max(learner.predict_proba([message_vector])[0])
-                predicted_msg_content = enrich_message(msg_content, prediction) 
-                print(f"{predicted_msg_content['message']}")
-                print(f"    Severity : {predicted_msg_content['severity']}")
-                print(f"    Event Type : {predicted_msg_content['event_type']}")
-                print(f"    Category : {predicted_msg_content['category']}")
-                print("    Taux de confiance : {:.2f}%".format(max_prob * 100))
+                try:
+                    message_vector = convert_to_vector(message)
+                    prediction = learner.predict([message_vector])
+                    # Si vous n'êtes pas sûr à 100% de la prédiction, demandez une annotation
+                    max_prob = np.max(learner.predict_proba([message_vector])[0])
+                    predicted_msg_content = enrich_message(msg_content, prediction) 
+                    print(f"{predicted_msg_content['message']}")
+                    print(f"    Severity : {predicted_msg_content['severity']}")
+                    print(f"    Event Type : {predicted_msg_content['event_type']}")
+                    print(f"    Category : {predicted_msg_content['category']}")
+                    print("    Taux de confiance : {:.2f}%".format(max_prob * 100))
 
-                if max_prob < 0.75:
+                    if max_prob < 0.75:
+                        # Appel de la fonction de catégorisation
+                        if categorize_message(message, msg_content):
+                            save_message(msg_content)
+                            print("---- Regexp Categorized")
+                            msg_content['max_probability'] = "{:.2f}%".format(max_prob)
+                            continue  # Recherchez un autre message à catégoriser
+
+                        return message
+                    else:
+                        # Sauvegarder le message dans le topic "enriched"
+                        print("---- AI Categorized")
+                        save_message(predicted_msg_content)
+                        return '', 204  # No Content
+                except:
                     # Appel de la fonction de catégorisation
                     if categorize_message(message, msg_content):
                         save_message(msg_content)
-                        print("---- Regexp Categorized")
-                        msg_content['max_probability'] = "{:.2f}%".format(max_prob)
                         continue  # Recherchez un autre message à catégoriser
 
+                    # Si l'active learning est désactivé, retournez directement le message sans vérification.
                     return message
-                else:
-                    # Sauvegarder le message dans le topic "enriched"
-                    print("---- AI Categorized")
-                    save_message(predicted_msg_content)
-                    return '', 204  # No Content
             else:
                 # Appel de la fonction de catégorisation
                 if categorize_message(message, msg_content):
@@ -306,17 +328,6 @@ def get_message():
 
     return '', 204  # No Content
 
-def teach_to_learner(enriched_msg):
-    message_vector = convert_to_vector(enriched_msg["log"])
-    
-    # Combinez les labels. Cette étape dépend de votre cas d'utilisation.
-    combined_label = f"{enriched_msg['severity']}_{enriched_msg['event_type']}_{enriched_msg['category']}"
-    
-    learner.teach([message_vector], [combined_label])
-
-    dump(learner, 'learner_model.pkl')
-
-
 @app.route('/send', methods=['POST'])
 def send():
     log = request.form['log']
@@ -324,7 +335,7 @@ def send():
     event_type = request.form['event_type']
     category = request.form['category']
     enriched_msg = {
-        "log": log,
+        "message": log,
         "severity": severity,
         "event_type": event_type,
         "category": category
@@ -344,19 +355,22 @@ if __name__ == '__main__':
     #ACTIVE_LEARNING_ENABLED = False
 
     if ACTIVE_LEARNING_ENABLED:
-        print("Récupération des textes d'échantillon pour l'entraînement du vectorizer...")
-        sample_texts = build_sample_text(max_messages = 10000)
-        
         # Utilisation de la fonction
         print("Récupération des données d'entraînement initiales...")
-        initial_training_data, initial_training_labels = fetch_initial_training_data(config.get('PRODUCER', 'output_topic'))
-        
-        # Combine sample_texts et initial_training_data pour l'entraînement du vectorizer
-        print("Entraînement du vectorizer avec les textes d'échantillon et les données d'entraînement initiales...")
-        all_texts = sample_texts + [log for log in initial_training_data]
-        all_texts = [str(text) for text in all_texts]
-        vectorizer.fit(all_texts)
+        try:
+            initial_training_data, initial_training_labels = fetch_initial_training_data(config.get('PRODUCER', 'output_topic'))
 
+            print("Récupération des textes d'échantillon pour l'entraînement du vectorizer...")
+            sample_texts = build_sample_text(max_messages = 10000)
+            
+            # Combine sample_texts et initial_training_data pour l'entraînement du vectorizer
+            print("Entraînement du vectorizer avec les textes d'échantillon et les données d'entraînement initiales...")
+            all_texts = sample_texts + [log for log in initial_training_data]
+            all_texts = [str(text) for text in all_texts]
+            vectorizer.fit(all_texts)
+        except:
+            print(f"Aucune donnée d'entrainement disponible...le topic '{config.get('PRODUCER', 'output_topic')}' est vide")
+        
         # Chargez le modèle si déjà existant
         print("Chargement ou initialisation du modèle ActiveLearner...")
         try:

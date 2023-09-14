@@ -8,3 +8,8 @@ max_wait_time = your_wait_time
 [PRODUCER]
 bootstrap.servers = your_broker
 output_topic = your_output_topic
+
+[CLASSIFIERS]
+severities = INFO,DEBUG,WARNING,ERROR,CRITICAL
+event_types = Heartbeat,State change,Authentication and Authorization,Operations on files and apps,Network Communication,Security and Anomalies,Performance and Resources,User Interactions,Useless
+categories = Hardware Infrastructure,Software Infrastructure,Connectivity and Security,Datas,Application & Middleware,Monitoring & Logging,Automation & CI/CD,Uncategorized
