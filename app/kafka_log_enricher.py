@@ -175,7 +175,10 @@ def save_message(message_content):
     p.produce(output_topic, value=json_msg)
 
     if ACTIVE_LEARNING_ENABLED:
-        teach_to_learner(message_content)
+        try:
+            teach_to_learner(message_content)
+        except:
+            print("Le modèle n'esty pas encore entrainé")
 
 
 def categorize_message(message, msg_content):
@@ -343,7 +346,10 @@ def send():
     output_topic = config.get('PRODUCER', 'output_topic')
     
     if ACTIVE_LEARNING_ENABLED:
-        teach_to_learner(enriched_msg)
+        try:
+            teach_to_learner(enriched_msg)
+        except:
+            print("Le modèle n'est pas encore entrainé")
 
     # Convert the dictionary to a JSON string
     json_msg = json.dumps(enriched_msg)
