@@ -18,10 +18,8 @@ def shutdown():
     c.close()
     p.flush()
 
-
 # Variable globale pour activer/désactiver l'Active Learning
 ACTIVE_LEARNING_ENABLED = True
-
 
 # Lire la configuration
 print("Chargement de la configuration...")
@@ -38,7 +36,6 @@ consumer_config = {
 print("Configuration du Consumer...")
 c = Consumer(consumer_config)
 
-
 # Configurer le Producer
 producer_config = {
     'bootstrap.servers': config.get('PRODUCER', 'bootstrap.servers')
@@ -54,7 +51,6 @@ MAX_WAIT_TIME = int(config.get('CONSUMER', 'max_wait_time', fallback=10))  # fal
 event_types = config.get('CLASSIFIERS', 'event_types').split(',')
 categories = config.get('CLASSIFIERS', 'categories').split(',')
 severities = config.get('CLASSIFIERS', 'severities').split(',')
-
 
 # Initialisation des données
 X_pool = []
@@ -232,27 +228,17 @@ def categorize_message(message, msg_content):
         msg_content['category'] = 'Application & Middleware'
         return True  # Recherchez un autre message à catégoriser
 
-    # Si aucune condition n'est satisfaite, retournez False
+    # Si aucune condition n'est satisfaite => False
     return False
 
 
 
 def enrich_message(msg_content, prediction):
-    """
-    Ajoute des métadonnées supplémentaires basées sur la prédiction.
-
-    Args:
-    - msg_content (dict): le contenu original du message
-    - prediction (array-like): la prédiction retournée par le modèle
-
-    Returns:
-    - dict: le message enrichi
-    """
 
         # Scinde le message sur chaque underscore
     parts = prediction[0].split('_')
 
-    # Assurez-vous qu'il y a exactement trois parties (pour severity, event_type, et category)
+    # Vérifie qu'il y a exactement trois parties (pour severity, event_type, et category)
     if len(parts) == 3:
         severity, event_type, category = parts
 
@@ -261,7 +247,6 @@ def enrich_message(msg_content, prediction):
         msg_content['event_type'] = event_type
         msg_content['category'] = category
 
-    # Sinon, vous pourriez vouloir ajouter une gestion d'erreurs ou une logique supplémentaire
     else:
         print("Erreur : le format du message n'est pas ce à quoi on s'attendait.")
 
@@ -295,18 +280,11 @@ def get_message():
                 print(f"    Category : {predicted_msg_content['category']}")
                 print("    Taux de confiance : {:.2f}%".format(max_prob * 100))
 
-                #print(predicted_msg_content)
-                #print(msg_content)
                 if max_prob < 0.75:
                     # Appel de la fonction de catégorisation
                     if categorize_message(message, msg_content):
                         save_message(msg_content)
                         print("---- Regexp Categorized")
-                        print(f"{predicted_msg_content['message']}")
-                        print(f"    Severity : {msg_content['severity']} vs {predicted_msg_content['severity']}")
-                        print(f"    Event Type :  {msg_content['event_type']} vs {predicted_msg_content['event_type']}")
-                        print(f"    Category :  {msg_content['category']} vs {predicted_msg_content['category']}")
-                        print("    Taux de confiance : {:.2f}%".format(max_prob * 100))
                         msg_content['max_probability'] = "{:.2f}%".format(max_prob)
                         continue  # Recherchez un autre message à catégoriser
 
@@ -314,11 +292,6 @@ def get_message():
                 else:
                     # Sauvegarder le message dans le topic "enriched"
                     print("---- AI Categorized")
-                    print(f"{predicted_msg_content['message']}")
-                    print(f"    Severity : {predicted_msg_content['severity']}")
-                    print(f"    Event Type : {predicted_msg_content['event_type']}")
-                    print(f"    Category : {predicted_msg_content['category']}")
-                    print("    Taux de confiance : {:.2f}%".format(max_prob * 100))
                     save_message(predicted_msg_content)
                     return '', 204  # No Content
             else:
