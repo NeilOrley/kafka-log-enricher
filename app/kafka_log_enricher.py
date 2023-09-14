@@ -15,8 +15,6 @@ import random
 
 @atexit.register
 def shutdown():    
-    c.unsubscribe()
-    c.unassign()
     c.close()
     p.flush()
 
