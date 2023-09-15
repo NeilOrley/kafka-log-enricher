@@ -20,6 +20,16 @@ Une interface web permettant d'extraire des messages d'un topic Kafka spécifiqu
     }
    ```
 
+   ou
+
+      ```bash
+    {
+        "message": "my_log_message",
+        "my_key": "my_value",
+        ...
+    }
+   ```
+
 - Python 3.x
 - Flask
 - confluent-kafka

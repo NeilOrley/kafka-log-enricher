@@ -288,6 +288,7 @@ def get_message():
                 try:
                     message_vector = convert_to_vector(message)
                     prediction = learner.predict([message_vector])
+                    
                     # Si vous n'êtes pas sûr à 100% de la prédiction, demandez une annotation
                     max_prob = np.max(learner.predict_proba([message_vector])[0])
                     predicted_msg_content = enrich_message(msg_content, prediction) 
@@ -297,7 +298,7 @@ def get_message():
                     print(f"    Category : {predicted_msg_content['category']}")
                     print("    Taux de confiance : {:.2f}%".format(max_prob * 100))
 
-                    if max_prob < 0.75:
+                    if max_prob < 0.95:
                         # Appel de la fonction de catégorisation
                         if categorize_message(message, msg_content):
                             save_message(msg_content)
