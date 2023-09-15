@@ -5,3 +5,5 @@ modAL-python
 scikit-learn
 numpy
 tqdm
+transformers
+torch

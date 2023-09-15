@@ -2,7 +2,6 @@ import numpy as np
 from modAL.models import ActiveLearner
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.feature_extraction.text import TfidfVectorizer
-from confluent_kafka import Consumer
 import json
 import configparser
 from flask import Flask, render_template, request
@@ -38,13 +37,13 @@ c = Consumer(consumer_config)
 
 # Configurer le Producer
 producer_config = {
-    'bootstrap.servers': config.get('PRODUCER', 'bootstrap.servers')
+    'bootstrap.servers': config.get('ENRICHED', 'bootstrap.servers')
 }
 
 print("Configuration du Producer...")
 p = Producer(producer_config)
 
-output_topic = config.get('PRODUCER', 'output_topic')
+output_topic = config.get('ENRICHED', 'topic')
 
 # Au début, lisez le délai d'attente de la configuration:
 MAX_WAIT_TIME = int(config.get('CONSUMER', 'max_wait_time', fallback=10))  # fallback est le délai d'attente par défaut
@@ -275,41 +274,47 @@ def send():
     p.produce(output_topic, value=json_msg)
     return "Success", 200
 
+
 if __name__ == '__main__':
     # Pour désactiver l'Active Learning, décommentez la ligne suivante :
     #ACTIVE_LEARNING_ENABLED = False
 
     if ACTIVE_LEARNING_ENABLED:
+        initial_training_data = []
+        initial_training_labels = []
+        
         # Utilisation de la fonction
         print("Récupération des données d'entraînement initiales...")
         try:
             initial_training_data, initial_training_labels = fetch_initial_training_data(output_topic)
 
             print("Récupération des textes d'échantillon pour l'entraînement du vectorizer...")
-            sample_texts = build_sample_text(max_messages = 10000)
+            sample_texts = build_sample_text(max_messages=10000)
             
             # Combine sample_texts et initial_training_data pour l'entraînement du vectorizer
             print("Entraînement du vectorizer avec les textes d'échantillon et les données d'entraînement initiales...")
             all_texts = sample_texts + [log for log in initial_training_data]
             all_texts = [str(text) for text in all_texts]
             vectorizer.fit(all_texts)
-        except:
-            print(f"Aucune donnée d'entrainement disponible...le topic '{output_topic}' est vide")
+        except Exception as e:
+            print(f"Aucune donnée d'entrainement disponible...le topic '{output_topic}' est vide. Erreur : {e}")
         
         # Chargez le modèle si déjà existant
         print("Chargement ou initialisation du modèle ActiveLearner...")
         try:
             learner = load('learner_model_TD-IDF.pkl')
             print("Modèle chargé avec succès.")
-        except:
-            # Si pas trouvé, créez un nouveau
-            # Initialisez votre modèle et l'apprenant actif
+        except FileNotFoundError:
             print("Aucun modèle préexistant trouvé. Initialisation d'un nouveau modèle...")
-            learner = ActiveLearner(
-                estimator=RandomForestClassifier(),
-                X_training=initial_training_data,  # Vos données d'entraînement initiales converties en vecteurs
-                y_training=initial_training_labels  # Vos labels initiaux
-            )
+            if initial_training_data and initial_training_labels:
+                X_initial_training = vectorizer.transform(initial_training_data)
+                learner = ActiveLearner(
+                    estimator=RandomForestClassifier(),
+                    X_training=X_initial_training,
+                    y_training=initial_training_labels
+                )
+            else:
+                print("Données d'entraînement insuffisantes pour initialiser l'ActiveLearner.")
 
     print("Lancement de l'application Flask...")
     app.run(debug=True)

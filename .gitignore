@@ -1,4 +1,5 @@
 __pycache__/
 venv/
 config.ini
-app/learner_model.pkl
+app/learner_model_TD-IDF.pkl
+caadmin.netskope.com
