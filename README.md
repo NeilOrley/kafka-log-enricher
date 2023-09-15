@@ -22,6 +22,13 @@ Exécution : Lorsque le script est exécuté, il vérifie d'abord si le modèle 
 - Renvoyer le message enrichi dans un topic Kafka défini.
 
 ## Prérequis
+
+- Le topic Kafka "ENRICHED" doit disposer d'au moins 1000 messages catégorisés. Une fois ce volume de message disponible vous pourrez commenter la ligne :
+
+  ```bash
+    ACTIVE_LEARNING_ENABLED = False
+  ```
+
 - Le message dans le topic Kafka doit avoir le format suivant :
 
    ```bash

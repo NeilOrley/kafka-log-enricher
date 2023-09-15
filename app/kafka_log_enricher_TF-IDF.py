@@ -179,6 +179,8 @@ def get_message():
             msg_content = json.loads(msg.value().decode('utf-8'))
             # Extraire la valeur associée à la clé "message" ou "log". Sinon renvoi 'No Content'
             message = msg_content.get('message') or msg_content.get('log') or 'No Content'
+            hostname = msg_content.get('hostname') or 'No Hostname'
+            container_name = msg_content.get('container_name') or 'No Container Name'
             msg_content['message'] = message
 
             if ACTIVE_LEARNING_ENABLED:
@@ -203,21 +205,21 @@ def get_message():
                                 try:
                                     teach_to_learner(msg_content)
                                 except:
-                                    print("Le modèle n'esty pas encore entrainé")
-                            print("---- Regexp Categorized")
+                                    print("Le modèle n'est pas encore entrainé")
+                            print("=> Message Regexp Categorized")
                             msg_content['max_probability'] = "{:.2f}%".format(max_prob)
                             continue  # Recherchez un autre message à catégoriser
 
-                        return message
+                        return f"{hostname}, {container_name}, {message}"
                     else:
                         # Sauvegarder le message dans le topic "enriched"
-                        print("---- AI Categorized")
+                        print("=> Message AI Categorized")
                         save_message(predicted_msg_content, p, output_topic)
                         if ACTIVE_LEARNING_ENABLED:
                             try:
                                 teach_to_learner(predicted_msg_content)
                             except:
-                                print("Le modèle n'esty pas encore entrainé")
+                                print("Le modèle n'est pas encore entrainé")
                         return '', 204  # No Content
                 except:
                     # Appel de la fonction de catégorisation
@@ -231,7 +233,7 @@ def get_message():
                         continue  # Recherchez un autre message à catégoriser
 
                     # Si l'active learning est désactivé, retournez directement le message sans vérification.
-                    return message
+                    return f"{hostname}, {container_name}, {message}"
             else:
                 # Appel de la fonction de catégorisation
                 if categorize_message(message, msg_content):
@@ -244,13 +246,15 @@ def get_message():
                     continue  # Recherchez un autre message à catégoriser
 
                 # Si l'active learning est désactivé, retournez directement le message sans vérification.
-                return message
+                return f"{hostname}, {container_name}, {message}"
         elapsed_time += 1
 
     return '', 204  # No Content
 
 @app.route('/send', methods=['POST'])
 def send():
+    #output_topic = config.get('ENRICHED', 'topic')
+
     log = request.form['log']
     severity = request.form['severity']
     event_type = request.form['event_type']
@@ -268,10 +272,9 @@ def send():
             teach_to_learner(enriched_msg)
         except:
             print("Le modèle n'est pas encore entrainé")
-
+    #print(f"output_topic : {output_topic}, {enriched_msg}")
     # Convert the dictionary to a JSON string
-    json_msg = json.dumps(enriched_msg)
-    p.produce(output_topic, value=json_msg)
+    save_message(enriched_msg, p, output_topic)
     return "Success", 200
 
 
@@ -306,7 +309,8 @@ if __name__ == '__main__':
             print("Modèle chargé avec succès.")
         except FileNotFoundError:
             print("Aucun modèle préexistant trouvé. Initialisation d'un nouveau modèle...")
-            if initial_training_data and initial_training_labels:
+            if len(initial_training_data) > 0 and len(initial_training_labels) > 0:
+                initial_training_data = [str(doc) for doc in initial_training_data]
                 X_initial_training = vectorizer.transform(initial_training_data)
                 learner = ActiveLearner(
                     estimator=RandomForestClassifier(),
@@ -315,6 +319,7 @@ if __name__ == '__main__':
                 )
             else:
                 print("Données d'entraînement insuffisantes pour initialiser l'ActiveLearner.")
+
 
     print("Lancement de l'application Flask...")
     app.run(debug=True)
