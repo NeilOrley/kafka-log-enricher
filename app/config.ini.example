@@ -5,11 +5,14 @@ auto.offset.reset = earliest
 topic = your_input_topic
 max_wait_time = your_wait_time
 
-[PRODUCER]
+[ENRICHED]
 bootstrap.servers = your_broker
-output_topic = your_output_topic
+group.id = your_group
+auto.offset.reset = earliest
+topic = your_output_topic
+max_wait_time = your_wait_time
 
 [CLASSIFIERS]
-severities = INFO,DEBUG,WARNING,ERROR,CRITICAL
-event_types = Heartbeat,State change,Authentication and Authorization,Operations on files and apps,Network Communication,Security and Anomalies,Performance and Resources,User Interactions,Useless
-categories = Hardware Infrastructure,Software Infrastructure,Connectivity and Security,Datas,Application & Middleware,Monitoring & Logging,Automation & CI/CD,Uncategorized
+severities = INFO,WARNING,ERROR,CRITICAL
+event_types = Heartbeat,State change,Operations on files,Apps Interactions,Network Message,Security,Performance Issue,User Interactions,None
+categories = Hardware Infrastructure,OS/VM & Dockers,Network Element,Security System,Datas,Application,Middleware,Monitoring & Logging,Other
