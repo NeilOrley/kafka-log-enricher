@@ -10,8 +10,8 @@ from confluent_kafka import Consumer, Producer
 from joblib import dump, load
 from tqdm import tqdm
 import atexit
-import re
 import random
+from messages_utils import categorize_message, save_message, enrich_message
 
 @atexit.register
 def shutdown():    
@@ -43,6 +43,8 @@ producer_config = {
 
 print("Configuration du Producer...")
 p = Producer(producer_config)
+
+output_topic = config.get('PRODUCER', 'output_topic')
 
 # Au début, lisez le délai d'attente de la configuration:
 MAX_WAIT_TIME = int(config.get('CONSUMER', 'max_wait_time', fallback=10))  # fallback est le délai d'attente par défaut
@@ -143,6 +145,17 @@ def fetch_initial_training_data(topic_name):
     return vectorized_data, labels
 
 
+def teach_to_learner(enriched_msg):
+    message_vector = convert_to_vector(enriched_msg["message"])
+    
+    # Combinez les labels. Cette étape dépend de votre cas d'utilisation.
+    combined_label = f"{enriched_msg['severity']}_{enriched_msg['event_type']}_{enriched_msg['category']}"
+    
+    learner.teach([message_vector], [combined_label])
+
+    dump(learner, 'learner_model_TD-IDF.pkl')
+
+
 
 print("Initialisation de l'application Flask...")
 app = Flask(__name__, template_folder='../templates')
@@ -153,121 +166,6 @@ def index():
     categories = config.get('CLASSIFIERS', 'categories').split(',')
     severities = config.get('CLASSIFIERS', 'severities').split(',')
     return render_template('index.html', event_types=event_types, categories=categories, severities=severities)
-
-
-def teach_to_learner(enriched_msg):
-    message_vector = convert_to_vector(enriched_msg["message"])
-    
-    # Combinez les labels. Cette étape dépend de votre cas d'utilisation.
-    combined_label = f"{enriched_msg['severity']}_{enriched_msg['event_type']}_{enriched_msg['category']}"
-    
-    learner.teach([message_vector], [combined_label])
-
-    dump(learner, 'learner_model.pkl')
-
-def save_message(message_content):
-    """
-    Sauvegarde le message après la catégorisation.
-    """
-    output_topic = config.get('PRODUCER', 'output_topic')
-    # Convert the dictionary to a JSON string
-    json_msg = json.dumps(message_content)
-    p.produce(output_topic, value=json_msg)
-
-    if ACTIVE_LEARNING_ENABLED:
-        try:
-            teach_to_learner(message_content)
-        except:
-            print("Le modèle n'esty pas encore entrainé")
-
-
-def categorize_message(message, msg_content):
-    if message == 'No Content':
-        msg_content['severity'] = 'INFO'
-        msg_content['event_type'] = 'Useless'
-        msg_content['category'] = 'Uncategorized'
-        return True  # Recherchez un autre message à catégoriser
-
-    # Catégorisation pour la chaîne spécifique
-    # vcenter-pau vsan-health-main - - - }, 'hostRebuildCapacity': 0, 'minSpaceRequiredForVsanOp': 16324541546496, 'enforceCapResrvSpace': 0
-    specific_string = "minSpaceRequiredForVsanOp"
-    if specific_string in message:
-        msg_content['severity'] = 'WARNING'
-        msg_content['event_type'] = 'Performance and Resources'
-        msg_content['category'] = 'Hardware Infrastructure'
-        return True  # Recherchez un autre message à catégoriser
-    # Request user: ws-arcgis.gfield@axione.fr, Service: GField_Console/MANAGER_READONLY_GALWAY/FeatureServer
-    specific_string = "Request user"
-    if specific_string in message:
-        msg_content['severity'] = 'INFO'
-        msg_content['event_type'] = 'Authentication and Authorization'
-        msg_content['category'] = 'Application & Middleware'
-        return True  # Recherchez un autre message à catégoriser
-    
-    # <14>Sep 6 15:11:37 vma-pprdck-30 consul[1216]: 2023-09-06T15:11:37.706+0200 [DEBUG] agent: Check status updated: check=groot_ppr-tcp status=passing
-    specific_string = "Check status updated"
-    if specific_string in message:
-        msg_content['severity'] = 'DEBUG'
-        msg_content['event_type'] = 'Heartbeat'
-        msg_content['category'] = 'Application & Middleware'
-        return True  # Recherchez un autre message à catégoriser
-    
-    # <167>Sep 7 07:40:19 vma-prdadm-64 slapd[1722022]: conn=14162247 op=0 BIND dn="cn=app-rt,ou=applications,ou=users,dc=axione,dc=fr" mech=SIMPLE ssf=0
-    pattern = re.compile(r'.*slapd.*(BIND|ACCEPT|SRCH|RESULT|UNBIND|closed).*')
-    if pattern.search(message):
-        msg_content['severity'] = 'INFO'
-        msg_content['event_type'] = 'Authentication and Authorization'
-        msg_content['category'] = 'Application & Middleware'
-        return True  # Recherchez un autre message à catégoriser
-    
-    # <167>Sep 7 07:40:20 vma-prdadm-64 slapd[1722022]: <= mdb_equality_candidates: (loginRT) not indexed
-    pattern = re.compile(r'.*slapd.*mdb_equality_candidates.*not indexed')
-    if pattern.search(message):
-        msg_content['severity'] = 'ERROR'
-        msg_content['event_type'] = 'Authentication and Authorization'
-        msg_content['category'] = 'Application & Middleware'
-        return True  # Recherchez un autre message à catégoriser
-    
-    # <167>Sep 7 07:40:20 vma-prdadm-64 slapd[1722022]: <= mdb_equality_candidates: (loginRT) not indexed
-    pattern = re.compile(r'.*pdns_recursor.*(answer|question).*')
-    if pattern.search(message):
-        msg_content['severity'] = 'DEBUG'
-        msg_content['event_type'] = 'Network Communication'
-        msg_content['category'] = 'Application & Middleware'
-        return True  # Recherchez un autre message à catégoriser
-
-    # <167>Sep 7 07:40:20 vma-prdadm-64 slapd[1722022]: <= mdb_equality_candidates: (loginRT) not indexed
-    pattern = re.compile(r'.*snoopy.*')
-    if pattern.search(message):
-        msg_content['severity'] = 'INFO'
-        msg_content['event_type'] = 'User Interactions'
-        msg_content['category'] = 'Application & Middleware'
-        return True  # Recherchez un autre message à catégoriser
-
-    # Si aucune condition n'est satisfaite => False
-    return False
-
-
-
-def enrich_message(msg_content, prediction):
-
-        # Scinde le message sur chaque underscore
-    parts = prediction[0].split('_')
-
-    # Vérifie qu'il y a exactement trois parties (pour severity, event_type, et category)
-    if len(parts) == 3:
-        severity, event_type, category = parts
-
-        # Ajoute les composantes au msg_content
-        msg_content['severity'] = severity
-        msg_content['event_type'] = event_type
-        msg_content['category'] = category
-
-    else:
-        print("Erreur : le format du message n'est pas ce à quoi on s'attendait.")
-
-    return msg_content
-
 
 
 @app.route('/get_message', methods=['GET'])
@@ -288,7 +186,7 @@ def get_message():
                 try:
                     message_vector = convert_to_vector(message)
                     prediction = learner.predict([message_vector])
-                    
+
                     # Si vous n'êtes pas sûr à 100% de la prédiction, demandez une annotation
                     max_prob = np.max(learner.predict_proba([message_vector])[0])
                     predicted_msg_content = enrich_message(msg_content, prediction) 
@@ -301,7 +199,12 @@ def get_message():
                     if max_prob < 0.95:
                         # Appel de la fonction de catégorisation
                         if categorize_message(message, msg_content):
-                            save_message(msg_content)
+                            save_message(msg_content, p, output_topic)
+                            if ACTIVE_LEARNING_ENABLED:
+                                try:
+                                    teach_to_learner(msg_content)
+                                except:
+                                    print("Le modèle n'esty pas encore entrainé")
                             print("---- Regexp Categorized")
                             msg_content['max_probability'] = "{:.2f}%".format(max_prob)
                             continue  # Recherchez un autre message à catégoriser
@@ -310,12 +213,22 @@ def get_message():
                     else:
                         # Sauvegarder le message dans le topic "enriched"
                         print("---- AI Categorized")
-                        save_message(predicted_msg_content)
+                        save_message(predicted_msg_content, p, output_topic)
+                        if ACTIVE_LEARNING_ENABLED:
+                            try:
+                                teach_to_learner(predicted_msg_content)
+                            except:
+                                print("Le modèle n'esty pas encore entrainé")
                         return '', 204  # No Content
                 except:
                     # Appel de la fonction de catégorisation
                     if categorize_message(message, msg_content):
-                        save_message(msg_content)
+                        save_message(msg_content, p, output_topic)
+                        if ACTIVE_LEARNING_ENABLED:
+                            try:
+                                teach_to_learner(msg_content)
+                            except:
+                                print("Le modèle n'esty pas encore entrainé")
                         continue  # Recherchez un autre message à catégoriser
 
                     # Si l'active learning est désactivé, retournez directement le message sans vérification.
@@ -323,7 +236,12 @@ def get_message():
             else:
                 # Appel de la fonction de catégorisation
                 if categorize_message(message, msg_content):
-                    save_message(msg_content)
+                    save_message(msg_content, p, output_topic)
+                    if ACTIVE_LEARNING_ENABLED:
+                        try:
+                            teach_to_learner(msg_content)
+                        except:
+                            print("Le modèle n'esty pas encore entrainé")
                     continue  # Recherchez un autre message à catégoriser
 
                 # Si l'active learning est désactivé, retournez directement le message sans vérification.
@@ -344,7 +262,7 @@ def send():
         "event_type": event_type,
         "category": category
     }
-    output_topic = config.get('PRODUCER', 'output_topic')
+    
     
     if ACTIVE_LEARNING_ENABLED:
         try:
@@ -365,7 +283,7 @@ if __name__ == '__main__':
         # Utilisation de la fonction
         print("Récupération des données d'entraînement initiales...")
         try:
-            initial_training_data, initial_training_labels = fetch_initial_training_data(config.get('PRODUCER', 'output_topic'))
+            initial_training_data, initial_training_labels = fetch_initial_training_data(output_topic)
 
             print("Récupération des textes d'échantillon pour l'entraînement du vectorizer...")
             sample_texts = build_sample_text(max_messages = 10000)
@@ -376,12 +294,12 @@ if __name__ == '__main__':
             all_texts = [str(text) for text in all_texts]
             vectorizer.fit(all_texts)
         except:
-            print(f"Aucune donnée d'entrainement disponible...le topic '{config.get('PRODUCER', 'output_topic')}' est vide")
+            print(f"Aucune donnée d'entrainement disponible...le topic '{output_topic}' est vide")
         
         # Chargez le modèle si déjà existant
         print("Chargement ou initialisation du modèle ActiveLearner...")
         try:
-            learner = load('learner_model.pkl')
+            learner = load('learner_model_TD-IDF.pkl')
             print("Modèle chargé avec succès.")
         except:
             # Si pas trouvé, créez un nouveau
