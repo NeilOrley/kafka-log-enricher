@@ -1,6 +1,18 @@
-# Kafka Log Enricher
+# Kafka Log Enricher (kafka_log_enricher_TF-IDF.py)
 
 Une interface web permettant d'extraire des messages d'un topic Kafka spécifique, d'afficher ces messages et de proposer un enrichissement avec des informations supplémentaires. Les messages enrichis sont ensuite renvoyés dans un autre topic Kafka.
+
+Configuration et initialisation : Le script commence par importer les bibliothèques nécessaires, lire la configuration depuis un fichier config.ini, configurer le Consumer et le Producer Kafka, et initialiser quelques autres paramètres.
+
+Récupération des données : fetch_initial_training_data() est une fonction qui récupère les messages d'un topic Kafka et renvoie une liste de logs et leurs étiquettes.
+
+Apprentissage Actif : Le script utilise l'apprentissage actif pour aider à catégoriser les messages. Lorsqu'un message est reçu, si le modèle est assez sûr de sa prédiction (avec une probabilité supérieure à 95 %), il étiquette automatiquement le message. Sinon, il sollicite une intervention humaine pour l'étiquetage.
+
+Envoi des données : Le script prend également en charge l'envoi de messages étiquetés à un topic Kafka.
+
+App Flask : Enfin, le script utilise Flask pour créer une interface web simple qui permet à un utilisateur d'étiqueter les messages pour lesquels le modèle n'est pas sûr.
+
+Exécution : Lorsque le script est exécuté, il vérifie d'abord si le modèle a déjà été formé et sauvegardé. Si c'est le cas, il charge le modèle. Sinon, il utilise les données récupérées du topic Kafka pour former un nouveau modèle.
 
 ## Fonctionnalités
 
