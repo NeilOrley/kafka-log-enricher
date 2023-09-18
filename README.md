@@ -145,8 +145,13 @@ event_types = Heartbeat,State change,Authentication and Authorization,Operations
 categories = Hardware Infrastructure,Software Infrastructure,Connectivity and Security,Datas,Application & Middleware,Monitoring & Logging,Automation & CI/CD,Uncategorized
 ```
 
-## Contribuer
+## Licence
 
+Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+
+## Contribution
+
+Les contributions sont les bienvenues ! Assurez-vous de tester vos modifications avant de soumettre une pull request.
 Si vous souhaitez contribuer à ce projet, veuillez suivre les étapes suivantes :
 
 1. **Fork** le projet.
@@ -155,8 +160,9 @@ Si vous souhaitez contribuer à ce projet, veuillez suivre les étapes suivantes
 4. Poussez dans la **Branch** (`git push origin feature/AmazingFeature`).
 5. Ouvrez une **Pull Request**.
 
+## Contact
 
-Pour intégrer un "disclaimer" ou un avertissement indiquant que le texte a été généré en utilisant ChatGPT, vous pouvez ajouter une note soit au début soit à la fin du document. Voici quelques suggestions sur la manière dont vous pourriez le formuler, en fonction de votre préférence :
+Pour toute question ou feedback, n'hésitez pas à contacter [Neil Orley](https://github.com/NeilOrley) ou à ouvrir une issue sur ce dépôt.
 
 
 > ---
