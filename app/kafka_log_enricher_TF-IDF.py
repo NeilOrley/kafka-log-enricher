@@ -17,13 +17,15 @@ def shutdown():
     c.close()
     p.flush()
 
-# Variable globale pour activer/désactiver l'Active Learning
-ACTIVE_LEARNING_ENABLED = True
 
 # Lire la configuration
 print("Chargement de la configuration...")
 config = configparser.ConfigParser()
 config.read('config.ini')
+
+
+# Variable globale pour activer/désactiver l'Active Learning
+ACTIVE_LEARNING_ENABLED = config.get('GLOBAL', 'active_learning_enables')
 
 # Configurer le Consumer
 consumer_config = {
@@ -143,7 +145,7 @@ def fetch_initial_training_data(topic_name):
     pbar.close()
 
     c.close()  # Fermer le consumer
-    
+
     vectorized_data = vectorizer.fit_transform(training_data).toarray()
     return vectorized_data, labels
 
@@ -296,8 +298,6 @@ def send():
 
 
 if __name__ == '__main__':
-    # Pour désactiver l'Active Learning, décommentez la ligne suivante :
-    #ACTIVE_LEARNING_ENABLED = False
 
     if ACTIVE_LEARNING_ENABLED:
         initial_training_data = []

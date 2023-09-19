@@ -3,7 +3,4 @@ venv/
 config.ini
 app/learner_model_TD-IDF.pkl
 caadmin.netskope.com
-app/models/app/
-app/models/category_model/*
-app/models/event_type_model/*
-app/models/severity_model/*
+app/models/*
