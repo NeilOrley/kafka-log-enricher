@@ -94,6 +94,8 @@ def build_sample_text(max_messages = 100):
                 #print("Erreur lors du décodage du message:", msg.value())
                 continue
             
+    c.close()  # Fermer le consumer
+
     return sample_texts
 
 
@@ -140,6 +142,8 @@ def fetch_initial_training_data(topic_name):
 
     pbar.close()
 
+    c.close()  # Fermer le consumer
+    
     vectorized_data = vectorizer.fit_transform(training_data).toarray()
     return vectorized_data, labels
 
@@ -212,14 +216,27 @@ def get_message():
 
                         return f"{hostname}, {container_name}, {message}"
                     else:
-                        # Sauvegarder le message dans le topic "enriched"
-                        print("=> Message AI Categorized")
-                        save_message(predicted_msg_content, p, output_topic)
-                        if ACTIVE_LEARNING_ENABLED:
-                            try:
-                                teach_to_learner(predicted_msg_content)
-                            except:
-                                print("Le modèle n'est pas encore entrainé")
+                        
+                        # Appel de la fonction de catégorisation
+                        if categorize_message(message, msg_content):
+                            save_message(msg_content, p, output_topic)
+                            if ACTIVE_LEARNING_ENABLED:
+                                try:
+                                    teach_to_learner(msg_content)
+                                except:
+                                    print("Le modèle n'est pas encore entrainé")
+                            print("=> Message Regexp Categorized")
+                            msg_content['max_probability'] = "{:.2f}%".format(max_prob)
+                            continue  # Recherchez un autre message à catégoriser
+                        else:
+                            # Sauvegarder le message dans le topic "enriched"
+                            print("=> Message AI Categorized")
+                            save_message(predicted_msg_content, p, output_topic)
+                            if ACTIVE_LEARNING_ENABLED:
+                                try:
+                                    teach_to_learner(predicted_msg_content)
+                                except:
+                                    print("Le modèle n'est pas encore entrainé")
                         return '', 204  # No Content
                 except:
                     # Appel de la fonction de catégorisation

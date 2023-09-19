@@ -86,6 +86,38 @@ def categorize_message(message, msg_content):
         msg_content['category'] = 'Monitoring & Logging'
         return True  # Recherchez un autre message à catégoriser
     
+    # Catégorisation des messages WARNING de Traefik
+    pattern = re.compile(r'.*vcenter.*"dnsmasq.*')
+    if pattern.search(message):
+        msg_content['severity'] = 'INFO'
+        msg_content['event_type'] = 'Network Message'
+        msg_content['category'] = 'Hardware Infrastructure'
+        return True  # Recherchez un autre message à catégoriser
+    
+    # Catégorisation des messages WARNING de Traefik
+    pattern = re.compile(r'.*vcenter.*ERROR.*')
+    if pattern.search(message):
+        msg_content['severity'] = 'ERROR'
+        msg_content['event_type'] = 'Apps Events'
+        msg_content['category'] = 'Hardware Infrastructure'
+        return True  # Recherchez un autre message à catégoriser
+
+    # Catégorisation des messages WARNING de Traefik
+    pattern = re.compile(r'.*vcenter.*WARN.*')
+    if pattern.search(message):
+        msg_content['severity'] = 'WARNING'
+        msg_content['event_type'] = 'Apps Events'
+        msg_content['category'] = 'Hardware Infrastructure'
+        return True  # Recherchez un autre message à catégoriser
+    
+    # Catégorisation des messages WARNING de Traefik
+    pattern = re.compile(r'.*vcenter.*')
+    if pattern.search(message):
+        msg_content['severity'] = 'INFO'
+        msg_content['event_type'] = 'Apps Events'
+        msg_content['category'] = 'Hardware Infrastructure'
+        return True  # Recherchez un autre message à catégoriser
+
     # Catégorisation des messages OK de Traefik
     pattern = re.compile(r'.*"OriginStatus":(2|3)...*RequestHost.*RequestMethod.*RequestPath.*RequestPort.*RequestProtocol.*RequestScheme.*')
     if pattern.search(message):
@@ -111,7 +143,7 @@ def categorize_message(message, msg_content):
         return True  # Recherchez un autre message à catégoriser
     
     # <167>Sep 7 07:40:19 vma-prdadm-64 slapd[1722022]: conn=14162247 op=0 BIND dn="cn=app-rt,ou=applications,ou=users,dc=axione,dc=fr" mech=SIMPLE ssf=0
-    pattern = re.compile(r'.*slapd.*(BIND|ACCEPT|SRCH|RESULT|UNBIND|closed|do_syncrep2|be_modify|syncrepl_entry|slap_queue_csn).*')
+    pattern = re.compile(r'.*slapd.*(BIND|ACCEPT|SRCH|RESULT|UNBIND|closed|be_modify|syncrep|slap_queue_csn|TLS established).*')
     if pattern.search(message):
         msg_content['severity'] = 'INFO'
         msg_content['event_type'] = 'App Events'
@@ -126,6 +158,13 @@ def categorize_message(message, msg_content):
         msg_content['category'] = 'Security System'
         return True  # Recherchez un autre message à catégoriser
     
+    pattern =re.compile(r'.*WARN.*logstash.outputs.elasticsearch.*')
+    if pattern.search(message):
+        msg_content['severity'] = 'WARNING'
+        msg_content['event_type'] = 'App Events'
+        msg_content['category'] = 'Monitoring & Logging'
+        return True  # Recherchez un autre message à catégoriser
+
     # <167>Sep 7 07:40:20 vma-prdadm-64 slapd[1722022]: <= mdb_equality_candidates: (loginRT) not indexed
     pattern = re.compile(r'.*pdns_recursor.*(answer|question).*')
     if pattern.search(message):

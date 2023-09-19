@@ -4,7 +4,7 @@ Une interface web permettant d'extraire des messages d'un topic Kafka spécifiqu
 
 ## Pipeline de fonctionnement
 
-### Utilisation du script : kafka_log_enricher_TF-IDF.py
+### Classification manuelle : kafka_log_enricher_TF-IDF.py
 
 Catégorisation manuelle : Au tout début il est nécessaire de désactiver l'active learning pour permettre au modèle de commencer son apprentissage.
 
@@ -18,8 +18,11 @@ Apprentissage Actif : Le script utilise l'apprentissage actif pour aider à cat�
     #ACTIVE_LEARNING_ENABLED = False
   ```
 
+### Entrainement du modèle : models/train_xxxxx_model_BERT.py
 
-### Utilisation du script : kafka_log_enricher_BERT.py (non testé pour le moment)
+Entrainement du modèle : Ce script consomme des messages de Kafka, contenant des textes et leurs catégories associées, puis entraîne un modèle de classification de texte DistilBert sur ces données, évaluant et sauvegardant ensuite le modèle entraîné pour des utilisations futures dans kafka_log_enricher_BERT.py
+
+### Classification automatique : kafka_log_enricher_BERT.py (non testé pour le moment)
 
 Apprentissage non supervisé : Le script utilise une méthode de transformation basée sur DistilBert et un réseau de neurones simple pour classer les embeddings de BERT. Il étiquette ainsi automatiquement le message.
 Cela nécessite un volume conséquent de données correctement anotées.

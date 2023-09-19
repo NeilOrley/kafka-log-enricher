@@ -4,97 +4,148 @@ from confluent_kafka import Consumer
 from transformers import DistilBertTokenizer, DistilBertForSequenceClassification, Trainer, TrainingArguments
 from torch.utils.data import Dataset
 from sklearn.model_selection import train_test_split
+from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_score
 import configparser
 import os
+from tqdm import tqdm
+import random
+import atexit
+
+# Définition de la variable d'environnement pour la certification
 os.environ['CURL_CA_BUNDLE'] = "../caadmin.netskope.com"
+
+# Fonction qui sera appelée à la sortie pour fermer le consumer
+@atexit.register
+def shutdown():    
+    c.close()
 
 # Lire le fichier de configuration
 config = configparser.ConfigParser()
 config.read('../config.ini')
 
 # Configuration Kafka Consumer
+consumer_group = f"KafkaLogEnricher_{random.randint(1, 10000)}"  # Générer un nom de groupe de consommateurs aléatoire
 CONSUMER_CONFIG = {
     'bootstrap.servers': config['ENRICHED']['bootstrap.servers'],
-    'group.id': config['ENRICHED']['group.id'],
-    'auto.offset.reset': config['ENRICHED']['auto.offset.reset'],
-    'max.poll.interval.ms': int(config['ENRICHED']['max_wait_time']) * 1000,
+    'group.id': consumer_group,
+    'auto.offset.reset': config['ENRICHED']['auto.offset.reset']
 }
 
-INPUT_TOPIC = config['ENRICHED']['output_topic']
+INPUT_TOPIC = config['ENRICHED']['topic']
 
-SEVERITY_LABELS = {label: idx for idx, label in enumerate(config['CLASSIFIERS']['severities'].split(','))}
+# Mappage des severities aux indices
+SEVERITIES_LABELS = {label: idx for idx, label in enumerate(config['CLASSIFIERS']['severities'].split(','))}
 
-# Créer le consumer
-consumer = Consumer(CONSUMER_CONFIG)
-consumer.subscribe([INPUT_TOPIC])
+# Création du consumer Kafka
+c = Consumer(CONSUMER_CONFIG)
+c.subscribe([INPUT_TOPIC])
 
+
+
+def compute_metrics(eval_pred):
+    predictions, labels = eval_pred
+    predictions = np.argmax(predictions, axis=1)
+
+    return {
+        'accuracy': accuracy_score(labels, predictions),
+        'precision': precision_score(labels, predictions, average='weighted'),
+        'recall': recall_score(labels, predictions, average='weighted'),
+        'f1': f1_score(labels, predictions, average='weighted')
+    }
+
+
+# Liste pour stocker les données
 data = []
-message_count = 0
-while True:
-    msg = consumer.poll(timeout=int(config['ENRICHED']['max_wait_time']))
 
-    if msg is None:
-        break
-
-    if msg.error():
-        print(f"Consumer error: {msg.error()}")
-    else:
-        data.append(json.loads(msg.value().decode('utf-8')))
-        message_count += 1
-    
-    if message_count >= 100000:
+# Lire les messages de Kafka avec une barre de progression
+with tqdm(desc="Reading messages", dynamic_ncols=True) as pbar:
+    while True:
+        msg = c.poll(1.0)
+        
+        if not msg:
             break
+        
+        # Décoder le message et l'ajouter à la liste
+        try:
+            data.append(json.loads(msg.value().decode('utf-8')))
+            pbar.update(1)  # Mettre à jour la barre de progression
+        except UnicodeDecodeError:
+            continue
 
-# Prétraitement des données
+c.close()  # Fermer le consumer
+
+print(f"Total messages conservés : {len(data)}")
+
+# Extraire les messages et leurs labels
 messages = [item['message'] for item in data]
-severity_labels = [SEVERITY_LABELS[item['severity']] for item in data]
+default_severity = SEVERITIES_LABELS.get("INFO")
+severity_labels = [SEVERITIES_LABELS.get(item['severities'], default_severity) for item in data]
 
-# Division des données
+# Diviser les données en train et validation
 train_texts, val_texts, train_severity_labels, val_severity_labels = train_test_split(messages, severity_labels, test_size=0.2)
 
-# Tokenization et Création du dataset
+# Initialiser le tokenizer DistilBert
 tokenizer = DistilBertTokenizer.from_pretrained('distilbert-base-uncased')
 
+# Classe pour le dataset personnalisé
 class CustomDataset(Dataset):
     def __init__(self, encodings, labels):
         self.encodings = encodings
         self.labels = labels
 
+    # Renvoie un élément du dataset
     def __getitem__(self, idx):
         item = {key: torch.tensor(val[idx]) for key, val in self.encodings.items()}
         item['labels'] = torch.tensor(self.labels[idx])
         return item
 
+    # Renvoie la taille du dataset
     def __len__(self):
         return len(self.labels)
 
+# Tokenization des textes
 train_encodings = tokenizer(train_texts, truncation=True, padding=True)
 val_encodings = tokenizer(val_texts, truncation=True, padding=True)
+
+# Création des datasets de train et validation
 train_dataset = CustomDataset(train_encodings, train_severity_labels)
 val_dataset = CustomDataset(val_encodings, val_severity_labels)
 
-# Entraînement
+# Paramètres d'entraînement
 training_args = TrainingArguments(
     per_device_train_batch_size=8,
     per_device_eval_batch_size=8,
     num_train_epochs=3,
     evaluation_strategy="epoch",
-    logging_dir='./logs',
+    logging_dir='app/logs',
+    output_dir='app/results'
 )
 
-model = DistilBertForSequenceClassification.from_pretrained('distilbert-base-uncased')
+# Nombre de severities
+num_severities = len(SEVERITIES_LABELS)
+print("Total number of severities:", num_severities)
+
+# Initialiser le modèle DistilBert pour la classification de séquences
+model = DistilBertForSequenceClassification.from_pretrained('distilbert-base-uncased', num_labels=num_severities)
+
+# Initialiser le Trainer
 trainer = Trainer(
     model=model,
     args=training_args,
     train_dataset=train_dataset,
-    eval_dataset=val_dataset
+    eval_dataset=val_dataset,
+    compute_metrics=compute_metrics
 )
 
+# Démarrer l'entraînement
 trainer.train()
+metrics = trainer.evaluate()
+print(metrics)
 
-# Sauvegarde
+
+# Sauvegarder le modèle et le tokenizer
 model.save_pretrained("./severity_model")
 tokenizer.save_pretrained("./severity_model")
 
-# Fermeture du consumer
-consumer.close()
+# Fermer le consumer Kafka
+c.close()
