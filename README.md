@@ -1,4 +1,4 @@
-# Kafka Log Enricher (kafka_log_enricher_TF-IDF.py)
+# Kafka Log Enricher
 
 Une interface web permettant d'extraire des messages d'un topic Kafka spécifique, d'afficher ces messages et de proposer un enrichissement avec des informations supplémentaires. Les messages enrichis sont ensuite renvoyés dans un autre topic Kafka.
 
@@ -6,19 +6,23 @@ Une interface web permettant d'extraire des messages d'un topic Kafka spécifiqu
 
 ### Classification manuelle : kafka_log_enricher_TF-IDF.py
 
-Catégorisation manuelle : Au tout début il est nécessaire de désactiver l'active learning pour permettre au modèle de commencer son apprentissage.
+ 1 - Catégorisation manuelle : Au tout départ il est nécessaire de désactiver l'active learning pour permettre au modèle de commencer son apprentissage.
 
   ```bash
     ACTIVE_LEARNING_ENABLED = False
   ```
 
-Apprentissage Actif : Le script utilise l'apprentissage actif pour aider à catégoriser les messages. Lorsqu'un message est reçu, si le modèle est assez sûr de sa prédiction (avec une probabilité supérieure à 95 %), il étiquette automatiquement le message. Sinon, il sollicite une intervention humaine pour l'étiquetage.
+ 2 - Apprentissage Actif : Le script utilise l'apprentissage actif pour aider à catégoriser les messages. Lorsqu'un message est reçu, si le modèle est assez sûr de sa prédiction (avec une probabilité supérieure à 95 %), il étiquette automatiquement le message. Sinon, il sollicite une intervention humaine pour l'étiquetage.
 
   ```bash
     #ACTIVE_LEARNING_ENABLED = False
   ```
 
 ### Entrainement du modèle : models/train_xxxxx_model_BERT.py
+
+> ---
+>
+> L'entrainement peut être lancé uniquement si le jeu de données anotées est suffisament important et réprésentatif de l'ensemble du périmètre a couvrir.
 
 Entrainement du modèle : Ce script consomme des messages de Kafka, contenant des textes et leurs catégories associées, puis entraîne un modèle de classification de texte DistilBert sur ces données, évaluant et sauvegardant ensuite le modèle entraîné pour des utilisations futures dans kafka_log_enricher_BERT.py
 
