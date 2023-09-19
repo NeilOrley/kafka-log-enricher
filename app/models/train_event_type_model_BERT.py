@@ -10,6 +10,8 @@ import os
 from tqdm import tqdm
 import random
 import atexit
+import numpy as np
+
 
 # Définition de la variable d'environnement pour la certification
 os.environ['CURL_CA_BUNDLE'] = "../caadmin.netskope.com"

@@ -10,6 +10,8 @@ import os
 from tqdm import tqdm
 import random
 import atexit
+import numpy as np
+
 
 # Définition de la variable d'environnement pour la certification
 os.environ['CURL_CA_BUNDLE'] = "../caadmin.netskope.com"
@@ -79,7 +81,7 @@ print(f"Total messages conservés : {len(data)}")
 # Extraire les messages et leurs labels
 messages = [item['message'] for item in data]
 default_severity = SEVERITIES_LABELS.get("INFO")
-severity_labels = [SEVERITIES_LABELS.get(item['severities'], default_severity) for item in data]
+severity_labels = [SEVERITIES_LABELS.get(item['severity'], default_severity) for item in data]
 
 # Diviser les données en train et validation
 train_texts, val_texts, train_severity_labels, val_severity_labels = train_test_split(messages, severity_labels, test_size=0.2)
