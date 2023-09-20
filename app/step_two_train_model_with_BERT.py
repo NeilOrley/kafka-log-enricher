@@ -1,7 +1,7 @@
 # Import des bibliothèques nécessaires
 import configparser
 import os
-from train_commons import *
+from step_two_commons import *
 
 
 def process_classifier_key(key, config, model_path_base):
@@ -11,13 +11,16 @@ def process_classifier_key(key, config, model_path_base):
     _LABELS = {label: idx for idx, label in enumerate(config['CLASSIFIERS'][key].split(','))}
 
     # Utilisation de la fonction helper pour extraire les messages de Kafka
+    print("Récupération des données dans Kafka...")
     data = fetch_kafka_messages()
 
     # Transformation des données brutes : extraction des messages, division en sets d'entraînement et de validation et obtention des labels
     default_value = config['DEFAULT_CLASSIFIERS'].get(key, list(_LABELS.keys())[0])  # Default au premier élément si non spécifié
+    print("Préparation des données : train_texts, val_texts, train_labels, val_labels...")
     train_texts, val_texts, train_labels, val_labels = prepare_data(data, _LABELS, default_value)
 
     # Initialisation du tokenizer, tokenization des données et définition des paramètres d'entraînement
+    print("Initialisation du tokenizer et tokenization des données...")
     tokenizer, train_dataset, val_dataset, training_args = initialize_and_train_tokenizer(model_path_base + "/" + key, train_texts, val_texts, train_labels, val_labels)
 
     # Calcul du nombre total de classes pour la classification
@@ -25,10 +28,12 @@ def process_classifier_key(key, config, model_path_base):
     print(f"Total number of {key}:", num_items)
 
     # Initialisation du modèle, entraînement avec les données préparées et obtention des métriques d'évaluation
+    print("Initialisation du modèle, entraînement avec les données préparées et obtention des métriques d'évaluation...")
     model, metrics = initialize_and_train_model(training_args, train_dataset, val_dataset, model_path_base + "/" + key, num_items)
     print(metrics)
 
     # Une fois l'entraînement terminé, sauvegarder le modèle et le tokenizer pour des utilisations ultérieures
+    print("Sauvegarde du modèle et du tokenizer pour utilisation ultérieure...")
     save_assets(model, tokenizer, model_path_base + "/" + key)
 
 

@@ -21,7 +21,7 @@ consumer_conf = {
 
 # Configuration Kafka Producer
 producer_conf = {
-    'bootstrap.servers': config['ENRICHED']['bootstrap.servers'],
+    'bootstrap.servers': config['OUTPUT']['bootstrap.servers'],
     'value.serializer': lambda x: json.dumps(x).encode('utf-8')
 }
 
@@ -83,7 +83,7 @@ def main():
                 "event_type": labels["event_type"],
                 "category": labels["category"]
             }
-            producer.produce(config['ENRICHED']['topic'], value=enriched_message)
+            producer.produce(config['OUTPUT']['topic'], value=enriched_message)
             message_count += 1
 
         if message_count >= 100000:

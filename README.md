@@ -61,10 +61,8 @@ Cela nécessite un volume conséquent de données correctement anotées.
     }
    ```
 
-- Python 3.x
-- Flask
-- confluent-kafka
-- configparser
+- Python >= 3.8
+- requirements.txt
 
 ## Installation
 
@@ -101,7 +99,7 @@ Cela nécessite un volume conséquent de données correctement anotées.
 
    - Sur Windows:
    ```bash
-   .\venv\Scripts\python.exe -m pip install --upgrade pip
+   .\venv\Scripts\python.exe -m pip install --upgrade pip setuptools wheel
    pip install -r .\app\requirements.txt
    ```
 

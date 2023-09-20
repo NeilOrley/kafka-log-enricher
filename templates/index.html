@@ -24,11 +24,6 @@
             <table class="table">
                 <thead>
                     <tr>
-                        <th>Log</th>
-                        <th>Severity</th>
-                        <th>Event Type</th>
-                        <th>Category</th>
-                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -48,48 +43,51 @@
             $("#loadingBar").show();
 
             function fetchMessage() {
-                $.get("/get_message", function(data) {
-                    if (data) {
-                        // Cachez la barre de progression
-                        $("#loadingBar").hide();
-
-                        let escapedData = data.replace(/"/g, '&quot;');
-
-                        let tableRow = `
-                            <tr>
-                                <td>${escapedData}</td>
-                                <td>
-                                    <select name="severity" required>
-                                        {% for severity in severities %}
-                                            <option value="{{ severity }}">{{ severity }}</option>
-                                        {% endfor %}
-                                    </select>
-                                </td>
-                                <td>
-                                    <select name="event_type" required>
-                                        {% for event_type in event_types %}
-                                            <option value="{{ event_type }}">{{ event_type }}</option>
-                                        {% endfor %}
-                                    </select>
-                                </td>
-                                <td>
-                                    <select name="category" required>
-                                        {% for category in categories %}
-                                            <option value="{{ category }}">{{ category }}</option>
-                                        {% endfor %}
-                                    </select>   
-                                </td>    
-                                <td>
-                                    <input type="hidden" name="log" value='${escapedData}'>
-                                    <button type="submit" class="btn btn-primary send-btn">Send</button>
-                                </td>
-                            </tr>
-                        `;
-                        $("table tbody").append(tableRow);
-                    } else {
-                        // Si aucun message n'est renvoyé, attendez 1 seconde et réessayez.
-                        setTimeout(fetchMessage, 1000);
+                // Récupérez les classificateurs du serveur
+                $.get("/get_classifiers", function(classifiers) {
+                    
+                    // Construisez le thead
+                    let theadContent = `<th>Message</th>`;
+                    
+                    for (let key in classifiers) {
+                        theadContent += `<th>${key.charAt(0).toUpperCase() + key.slice(1)}</th>`;
                     }
+
+                    theadContent += `<th>Action</th>`;
+                    
+                    // Insérez le contenu construit dans l'élément thead
+                    $("table thead tr").html(theadContent);
+
+                    $.get("/get_message", function(data) {
+                        if (data) {
+                            // Cachez la barre de progression
+                            $("#loadingBar").hide();
+
+                            let escapedData = data.replace(/"/g, '&quot;');
+                            let tableRow = `<tr><td>${escapedData}</td>`;
+                            
+                            for (let key in classifiers) {
+                                tableRow += `<td><select name="${key}">`;
+                                
+                                for (let value of classifiers[key]) {
+                                    tableRow += `<option value="${value}">${value}</option>`;
+                                }
+
+                                tableRow += `</select></td>`;
+                            }
+
+                            tableRow += `<td>
+                                            <input type="hidden" name="message" value='${escapedData}'>
+                                            <button type="submit" class="btn btn-primary send-btn">Send</button>
+                                        </td>
+                                        </tr>`;
+                            
+                            $("table tbody").append(tableRow);
+                        } else {
+                            // Si aucun message n'est renvoyé, attendez 1 seconde et réessayez.
+                            setTimeout(fetchMessage, 1000);
+                        }
+                    });
                 });
             }
 
@@ -104,12 +102,19 @@
                 let btn = $(this);
                 let formRow = btn.closest('tr');
 
-                $.post("/send", {
-                    log: formRow.find('input[name="log"]').val(),
-                    severity: formRow.find('select[name="severity"]').val(),
-                    event_type: formRow.find('select[name="event_type"]').val(),
-                    category: formRow.find('select[name="category"]').val()
-                }, function(response) {
+                $.post("/send", function() {
+                    // Obtenez tous les inputs et selects dans le formRow
+                    let elements = formRow.find('input, select');
+                    
+                    // Créez un objet de données à partir des éléments
+                    let data = {};
+                    elements.each(function() {
+                        let element = $(this);
+                        data[element.attr('name')] = element.val();
+                    });
+
+                    return data;
+                }(), function(response) {
                     if (response === "Success") {
                         formRow.remove();
                         fetchMessage();
@@ -126,6 +131,7 @@
                         }, 1500);
                     }
                 });
+
             });
         });
     </script>

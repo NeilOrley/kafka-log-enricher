@@ -7,7 +7,7 @@ import os
 from tqdm import tqdm
 import json
 from confluent_kafka import Consumer
-from transformers import DistilBertTokenizer, TrainingArguments, DistilBertForSequenceClassification, Trainer
+from transformers import DistilBertTokenizer, TrainingArguments, DistilBertForSequenceClassification, Trainer, TrainerCallback
 import configparser
 import random
 
@@ -20,12 +20,12 @@ def fetch_kafka_messages():
     # Générer un identifiant de groupe de consommateurs aléatoire pour éviter les conflits
     consumer_group = f"KafkaLogEnricher_{random.randint(1, 10000)}"
     CONSUMER_CONFIG = {
-        'bootstrap.servers': config['ENRICHED']['bootstrap.servers'],
+        'bootstrap.servers': config['OUTPUT']['bootstrap.servers'],
         'group.id': consumer_group,
-        'auto.offset.reset': config['ENRICHED']['auto.offset.reset']
+        'auto.offset.reset': config['OUTPUT']['auto.offset.reset']
     }
     # Définir le sujet à partir duquel les messages seront consommés
-    INPUT_TOPIC = config['ENRICHED']['topic']
+    INPUT_TOPIC = config['OUTPUT']['topic']
 
     # Création du consumer Kafka
     c = Consumer(CONSUMER_CONFIG)    
@@ -149,13 +149,12 @@ def initialize_and_train_model(training_args, train_dataset, val_dataset, model_
         args=training_args,                  # Arguments et paramètres d'entraînement précédemment définis
         train_dataset=train_dataset,        # Données d'entraînement
         eval_dataset=val_dataset,           # Données d'évaluation (validation)
-        compute_metrics=_compute_metrics     # Fonction pour calculer les métriques pendant l'évaluation
+        compute_metrics=_compute_metrics,     # Fonction pour calculer les métriques pendant l'évaluation
+        callbacks=[EarlyStoppingCallback(patience=3, metric="eval_accuracy")]  #  Signifie que l'entraînement s'arrêtera s'il n'y a pas d'amélioration de l'accuracy sur l'ensemble de validation pendant 3 époques consécutives
     )
 
     # Démarrer l'entraînement
     trainer.train()
-
-
     metrics = trainer.evaluate()
     return model, metrics
 
@@ -205,3 +204,27 @@ class CustomDataset(Dataset):
         - int: Le nombre d'éléments dans le dataset.
         """
         return len(self.labels)
+
+
+class EarlyStoppingCallback(TrainerCallback):
+    """
+    Early stopping to stop the training when a given metric does not improve anymore.
+    """
+    def __init__(self, patience=3, metric="eval_accuracy"):
+        self.patience = patience
+        self.metric = metric
+        self.best_score = None
+        self.epoch_without_improvement = 0
+
+    def on_evaluate(self, args, state, control, metrics, **kwargs):
+        # Check if current score is better than best score
+        current_score = metrics.get(self.metric)
+        if self.best_score is None or current_score > self.best_score:
+            self.best_score = current_score
+            self.epoch_without_improvement = 0
+        else:
+            self.epoch_without_improvement += 1
+        
+        # If no improvement for [patience] epochs, stop training
+        if self.epoch_without_improvement >= self.patience:
+            control.should_training_stop = True
