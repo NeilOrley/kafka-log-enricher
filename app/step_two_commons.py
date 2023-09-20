@@ -92,7 +92,7 @@ def _compute_metrics(eval_pred):
         'f1': f1_score(labels, predictions, average='weighted')  # Calcule le score F1 pondéré
     }
 
-def _check_and_load_pretrained(path, type_name):
+def _check_pretrained(path, type_name):
     """
     Vérifie si un modèle ou un tokenizer pré-formé existe et interroge l'utilisateur pour savoir s'il souhaite l'utiliser.
 
@@ -108,7 +108,7 @@ def _check_and_load_pretrained(path, type_name):
 
 def initialize_and_train_tokenizer(model_path, train_texts, val_texts, train_labels, val_labels):
     # Demande à l'utilisateur s'il souhaite utiliser le tokenizer précédement entrainé
-    use_pretrained_tokenizer = _check_and_load_pretrained(f"{model_path}/tokenizer", "tokenizer")
+    use_pretrained_tokenizer = _check_pretrained(f"{model_path}/tokenizer", "tokenizer")
     if use_pretrained_tokenizer:
         tokenizer = DistilBertTokenizer.from_pretrained(f"{model_path}/tokenizer")
     else:
@@ -137,7 +137,7 @@ def initialize_and_train_tokenizer(model_path, train_texts, val_texts, train_lab
 
 def initialize_and_train_model(training_args, train_dataset, val_dataset, model_path, num_items):
     # Demande à l'utilisateur s'il souhaite utiliser le modèle pré-entrainé
-    use_pretrained_model = _check_and_load_pretrained(f"{model_path}/model", "modèle")
+    use_pretrained_model = _check_pretrained(f"{model_path}/model", "modèle")
     if use_pretrained_model:
         model = DistilBertForSequenceClassification.from_pretrained(f"{model_path}/model")
     else:
