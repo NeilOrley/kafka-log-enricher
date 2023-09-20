@@ -45,6 +45,10 @@ if os.path.exists(cert_file_path):
     # Définir la variable d'environnement
     os.environ['CURL_CA_BUNDLE'] = cert_file_path
 
+if not os.path.exists("config.ini"):
+    print("Impossible de trouver le fichier de configuration 'config.ini'")
+    exit
+
 # Lire le fichier de configuration pour obtenir des paramètres tels que les paramètres Kafka
 config = configparser.ConfigParser()
 config.read('config.ini')

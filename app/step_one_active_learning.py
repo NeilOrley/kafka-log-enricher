@@ -16,6 +16,10 @@ def shutdown():
     c.close()
     p.flush()
 
+if not os.path.exists("config.ini"):
+    print("Impossible de trouver le fichier de configuration 'config.ini'")
+    exit
+
 
 model_path = "./models/learner_model_TD-IDF.pkl"
 
