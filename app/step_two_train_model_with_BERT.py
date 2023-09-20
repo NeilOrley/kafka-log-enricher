@@ -49,6 +49,17 @@ if not os.path.exists("config.ini"):
     print("Impossible de trouver le fichier de configuration 'config.ini'")
     exit
 
+# Vérifie que Pytorch utilisera un GPU si disponible
+if torch.cuda.is_available():
+    print("PyTorch est configuré pour utiliser CUDA et donc un GPU") 
+else :
+    num_gpus = torch.cuda.device_count()
+    if num_gpus :
+        print(f"/!\ : PyTorch n'est pas configuré pour utiliser CUDA et donc un GPU alors que {num_gpus} GPU sont disponible")      
+        for i in range(num_gpus):
+            print(f"GPU {i}: {torch.cuda.get_device_name(i)}")
+
+
 # Lire le fichier de configuration pour obtenir des paramètres tels que les paramètres Kafka
 config = configparser.ConfigParser()
 config.read('config.ini')

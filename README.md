@@ -129,6 +129,15 @@ Cela nécessite un volume conséquent de données correctement anotées.
 
 ## Configuration
 
+### CUDA de Pytorch
+L'application utilise Pytorch. Il peut être interesant d'utiliser les GPU pour accélérer l'entrainement du modèle. POur cela il est nécessaire d'installer une version de CUDA de Pytorch compatible avec la carte graphique.
+Exemple pour une installation de CUDA 11.5 : cu115 dans l'URL
+```ini
+pip install torch torchvision -f https://download.pytorch.org/whl/cu115/torch_stable.html
+```
+
+### Configuration de l'application
+
 La configuration de l'application est gérée par le fichier `config.ini`. Ce fichier contient des sections pour le Consumer Kafka et le Producer Kafka, ainsi que des paramètres spécifiques comme les noms des topics.
 
 Exemple de configuration :
