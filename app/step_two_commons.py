@@ -59,7 +59,7 @@ def fetch_kafka_messages():
 def prepare_data(data, input_labels, default_value, key):
     messages = [item['message'] for item in data]
     default_label = input_labels.get(default_value)
-    labels = [input_labels.get(item[key], default_label) for item in data]
+    labels = [input_labels.get(item.get(key, None), default_label) for item in data]
 
     # Diviser les données en train et validation
     train_texts, val_texts, train_labels, val_labels = train_test_split(messages, labels, test_size=0.2)

@@ -69,5 +69,5 @@ classifier_keys = config.options('CLASSIFIERS')
 
 # Itérer sur chaque clé de classification et traiter les données correspondantes
 for key in classifier_keys:
-    print(f"Entrainement du modèle pour le label {key}...")
+    print(f"Entrainement du modèle pour le label '{key}'...")
     process_classifier_key(key, config, model_path_base)
