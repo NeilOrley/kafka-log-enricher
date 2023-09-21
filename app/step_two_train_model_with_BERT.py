@@ -17,7 +17,7 @@ def process_classifier_key(key, config, model_path_base):
     # Transformation des données brutes : extraction des messages, division en sets d'entraînement et de validation et obtention des labels
     default_value = config['DEFAULT_CLASSIFIERS'].get(key, list(_LABELS.keys())[0])  # Default au premier élément si non spécifié
     print("Préparation des données : train_texts, val_texts, train_labels, val_labels...")
-    train_texts, val_texts, train_labels, val_labels = prepare_data(data, _LABELS, default_value)
+    train_texts, val_texts, train_labels, val_labels = prepare_data(data, _LABELS, default_value, key)
 
     # Initialisation du tokenizer, tokenization des données et définition des paramètres d'entraînement
     print("Initialisation du tokenizer et tokenization des données...")
@@ -71,5 +71,3 @@ classifier_keys = config.options('CLASSIFIERS')
 for key in classifier_keys:
     print(f"Entrainement du modèle pour le label {key}...")
     process_classifier_key(key, config, model_path_base)
-
-

@@ -4,3 +4,4 @@ config.ini
 app/learner_model_TD-IDF.pkl
 caadmin.netskope.com
 app/models/*
+documents/*
