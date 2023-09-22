@@ -6,10 +6,19 @@ import numpy as np
 import os
 from tqdm import tqdm
 import json
-from confluent_kafka import Consumer
+from confluent_kafka import Consumer, TopicPartition
 from transformers import DistilBertTokenizer, TrainingArguments, DistilBertForSequenceClassification, Trainer, TrainerCallback
 import configparser
 #import random
+
+
+def _assign_and_seek(consumer, partitions):
+    print()
+    print("Réinitialisation de l'offset...")
+    for p in partitions:
+        p.offset = 0
+    consumer.assign(partitions)
+
 
 def fetch_kafka_messages(key):
     # Lire le fichier de configuration pour obtenir des paramètres tels que les paramètres Kafka
@@ -30,7 +39,7 @@ def fetch_kafka_messages(key):
 
     # Création du consumer Kafka
     c = Consumer(CONSUMER_CONFIG)    
-    c.subscribe([INPUT_TOPIC])
+    c.subscribe([INPUT_TOPIC], on_assign=_assign_and_seek)
 
     # Liste pour stocker les données
     data = []
@@ -92,6 +101,20 @@ def _compute_metrics(eval_pred):
         'recall': recall_score(labels, predictions, average='weighted'),  # Calcule le rappel pondéré
         'f1': f1_score(labels, predictions, average='weighted')  # Calcule le score F1 pondéré
     }
+
+def do_training(path, type_name):
+    """
+    Vérifie si un modèle ou un tokenizer pré-formé existe et interroge l'utilisateur pour savoir s'il souhaite l'utiliser.
+
+    :param path: Chemin vers le fichier.
+    :param type_name: Nom du type (par exemple, "modèle" ou "tokenizer").
+    :return: Boolean indiquant si l'utilisateur souhaite utiliser le pré-entraîné.
+    """
+    if os.path.exists(path):
+        answer = input(f"Un {type_name} entrainé existe dans '{path}'. Voulez-vous le ré-entrainer? (oui/non): ").strip().lower()
+        return answer == 'oui'
+    else:
+        return True
 
 def _check_pretrained(path, type_name):
     """
