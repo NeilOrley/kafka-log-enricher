@@ -9,16 +9,17 @@ import json
 from confluent_kafka import Consumer
 from transformers import DistilBertTokenizer, TrainingArguments, DistilBertForSequenceClassification, Trainer, TrainerCallback
 import configparser
-import random
+#import random
 
-def fetch_kafka_messages():
+def fetch_kafka_messages(key):
     # Lire le fichier de configuration pour obtenir des paramètres tels que les paramètres Kafka
     config = configparser.ConfigParser()
     config.read('config.ini')
 
     # Configuration du consommateur Kafka
     # Générer un identifiant de groupe de consommateurs aléatoire pour éviter les conflits
-    consumer_group = f"KafkaLogEnricher_{random.randint(1, 10000)}"
+    #consumer_group = f"step-2_kafka-log-enricher_{random.randint(1, 10000)}"
+    consumer_group = f"kafka-log-enricher_step-2_{key}_fetch_kafka_messages"
     CONSUMER_CONFIG = {
         'bootstrap.servers': config['OUTPUT']['bootstrap.servers'],
         'group.id': consumer_group,

@@ -12,7 +12,7 @@ def process_classifier_key(key, config, model_path_base):
 
     # Utilisation de la fonction helper pour extraire les messages de Kafka
     print("Récupération des données dans Kafka...")
-    data = fetch_kafka_messages()
+    data = fetch_kafka_messages(key)
 
     # Transformation des données brutes : extraction des messages, division en sets d'entraînement et de validation et obtention des labels
     default_value = config['DEFAULT_CLASSIFIERS'].get(key, list(_LABELS.keys())[0])  # Default au premier élément si non spécifié

@@ -8,7 +8,7 @@ from flask import Flask, render_template, request, jsonify
 from confluent_kafka import Consumer, Producer
 from joblib import load
 import atexit
-import random
+#import random
 from step_one_utils import *
 
 @atexit.register
@@ -33,14 +33,14 @@ config.read('config.ini')
 ACTIVE_LEARNING_ENABLED = config.get('GLOBAL', 'active_learning_enables')
 
 # Configurer le Consumer
-consumer_config = {
-    'bootstrap.servers': config.get('CONSUMER', 'bootstrap.servers'),
-    'group.id': config.get('CONSUMER', 'group.id'),
-    'auto.offset.reset': config.get('CONSUMER', 'auto.offset.reset')
-}
+#consumer_config = {
+#    'bootstrap.servers': config.get('CONSUMER', 'bootstrap.servers'),
+#    'group.id': config.get('CONSUMER', 'group.id'),
+#    'auto.offset.reset': config.get('CONSUMER', 'auto.offset.reset')
+#}
 
-print("Configuration initiale du Consumer...")
-c = Consumer(consumer_config)
+#print("Configuration initiale du Consumer...")
+#c = Consumer(consumer_config)
 
 # Configurer le Producer
 producer_config = {
@@ -88,7 +88,8 @@ def index():
 def get_message():
     elapsed_time = 0
     # Générer un nouveau nom de groupe de consommateurs
-    consumer_group = f"KafkaLogEnricher_{random.randint(1, 10000)}"  # Remplacez ceci par votre base de nom de groupe de consommateurs
+    #consumer_group = f"step-1_get_message_{random.randint(1, 10000)}"
+    consumer_group = f"kafka-log-enricher_step-1_get_message"
     consumer_config = {
         'bootstrap.servers': config.get('CONSUMER', 'bootstrap.servers'),
         'group.id': consumer_group,

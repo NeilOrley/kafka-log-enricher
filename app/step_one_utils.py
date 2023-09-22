@@ -2,7 +2,7 @@ import re
 import json
 from confluent_kafka import Producer, Consumer
 from tqdm import tqdm
-import random
+#import random
 from joblib import dump
 import os
 
@@ -23,7 +23,9 @@ def convert_to_vector(vectorizer, data_point):
 def build_sample_text(config, max_messages = 100):
     
     # Générer un nouveau nom de groupe de consommateurs
-    consumer_group = f"KafkaLogEnricher_{random.randint(1, 10000)}"  # Remplacez ceci par votre base de nom de groupe de consommateurs
+    #consumer_group = f"step-1_kafka-log-enricher_{random.randint(1, 10000)}"
+    consumer_group = f"kafka-log-enricher_step-1_build_sample_text"
+    
     consumer_config = {
         'bootstrap.servers': config.get('CONSUMER', 'bootstrap.servers'),
         'group.id': consumer_group,
@@ -57,7 +59,8 @@ def build_sample_text(config, max_messages = 100):
 def fetch_initial_training_data(config, vectorizer, topic_name):
 
     # Générer un nouveau nom de groupe de consommateurs
-    consumer_group = f"KafkaLogEnricher_{random.randint(1, 10000)}"  # Remplacez ceci par votre base de nom de groupe de consommateurs
+    #consumer_group = f"step-1_kafka-log-enricher_{random.randint(1, 10000)}"
+    consumer_group = f"kafka-log-enricher_step-1_fetch_initial_training_data"
     consumer_config = {
         'bootstrap.servers': config.get('CONSUMER', 'bootstrap.servers'),
         'group.id': consumer_group,
